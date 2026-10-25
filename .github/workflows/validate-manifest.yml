@@ -1,13 +1,15 @@
-name: Validate ACS Manifest
+name: Validate Manifests
 
 on:
   push:
     paths:
       - 'acs-manifest.json'
+      - 'manifest.json'
       - '.github/workflows/validate-manifest.yml'
   pull_request:
     paths:
       - 'acs-manifest.json'
+      - 'manifest.json'
   workflow_dispatch:
 
 jobs:
@@ -25,45 +27,58 @@ jobs:
       - name: Validate manifest structure and URLs
         run: |
           python - << 'EOF'
-          import json, sys, urllib.request
+          import json, os, sys, urllib.request
 
-          with open('acs-manifest.json', 'r', encoding='utf-8') as f:
-              data = json.load(f)
-
+          manifest_files = ['acs-manifest.json', 'manifest.json']
           required_fields = ["manifest_version", "organization", "repository", "packages"]
-          for field in required_fields:
-              if field not in data:
-                  print(f"Error: Missing required field '{field}'", file=sys.stderr)
-                  sys.exit(1)
-
-          packages = data.get("packages", [])
-          print(f"Validating {len(packages)} packages...")
-
+          checked_urls = {}
           errors = 0
-          for pkg in packages:
-              url = pkg.get("url")
-              fn = pkg.get("filename")
-              arch = pkg.get("architecture")
-              sha = pkg.get("sha256")
-              
-              if not url or not fn or not arch:
-                  print(f"Error: Incomplete package entry: {pkg}", file=sys.stderr)
+
+          for mf in manifest_files:
+              if not os.path.exists(mf):
+                  print(f"Error: {mf} does not exist!", file=sys.stderr)
                   errors += 1
                   continue
+              with open(mf, 'r', encoding='utf-8') as f:
+                  data = json.load(f)
 
-              try:
-                  req = urllib.request.Request(url, method='HEAD')
-                  req.add_header('User-Agent', 'ACS-Build-System-Validator')
-                  with urllib.request.urlopen(req, timeout=15) as resp:
-                      if resp.status not in (200, 302):
-                          print(f"Warning: HTTP {resp.status} for {url}")
-              except Exception as e:
-                  print(f"Error reaching {url}: {e}", file=sys.stderr)
-                  errors += 1
+              for field in required_fields:
+                  if field not in data:
+                      print(f"Error in {mf}: Missing required field '{field}'", file=sys.stderr)
+                      errors += 1
+
+              packages = data.get("packages", [])
+              print(f"Validating {len(packages)} packages in {mf}...")
+
+              for pkg in packages:
+                  url = pkg.get("url")
+                  fn = pkg.get("filename")
+                  arch = pkg.get("architecture")
+                  sha = pkg.get("sha256")
+                  
+                  if not url or not fn or not arch:
+                      print(f"Error in {mf}: Incomplete package entry: {pkg}", file=sys.stderr)
+                      errors += 1
+                      continue
+
+                  if url not in checked_urls:
+                      try:
+                          req = urllib.request.Request(url, method='HEAD')
+                          req.add_header('User-Agent', 'ACS-Build-System-Validator')
+                          with urllib.request.urlopen(req, timeout=15) as resp:
+                              if resp.status not in (200, 302):
+                                  print(f"Warning: HTTP {resp.status} for {url}")
+                              checked_urls[url] = True
+                      except Exception as e:
+                          print(f"Error reaching {url}: {e}", file=sys.stderr)
+                          checked_urls[url] = False
+                          errors += 1
+                  elif checked_urls[url] is False:
+                      errors += 1
 
           if errors > 0:
               print(f"Validation failed with {errors} errors.", file=sys.stderr)
               sys.exit(1)
 
-          print("All packages validated successfully!")
+          print(f"All {len(checked_urls)} unique package URLs across manifests validated successfully!")
           EOF
