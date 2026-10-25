@@ -1,5 +1,15 @@
+# Ignore everything by default to prevent accidental check-in of huge tarballs/bundles
 *
 
+# Whitelist repository documentation and infrastructure
 !.gitignore
 !README.md
 !acs-manifest.json
+
+# Whitelist scripts and automation
+!scripts/
+!scripts/**
+
+# Whitelist GitHub Actions
+!.github/
+!.github/**
