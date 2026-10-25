@@ -96,17 +96,28 @@ The central index is [`acs-manifest.json`](./acs-manifest.json). Client setup sc
 - **CMake 4.1.1**
 - **CMake 3.31.6**
 
+### Available Build-Tools & Platform-Tools
+- **Build-Tools 35.0.2 / 35.0.1** (Android 15)
+- **Platform-Tools 35.0.2** (Android 15 adb with Termux non-root support)
+- Additional versions (`34.0.5`, `36.0.1`, `37.0.0`) available on demand via `sync-homuhomu.yml`
+
 ---
 
 ## 5. Automated Scripts
 
 ### 1. `scripts/generate_manifest.py`
-Scans all GitHub Releases in this repository, inspects each asset, calculates/verifies SHA-256 sums, and outputs `acs-manifest.json`:
+Scans all GitHub Releases in this repository, inspects each asset, calculates/verifies SHA-256 sums, and outputs dual-compatibility `acs-manifest.json` and `manifest.json`:
 ```bash
 python scripts/generate_manifest.py --repo userio12/acs-build-system --output acs-manifest.json
 ```
 
-### 2. `scripts/mirror_releases.py`
+### 2. `scripts/import_homuhomu_sdk.py`
+Imports, slices, and publishes Android SDK, Build-Tools, and Platform-Tools from [HomuHomu833/android-sdk-custom](https://github.com/HomuHomu833/android-sdk-custom):
+```bash
+python scripts/import_homuhomu_sdk.py --version 35.0.2 --dest-repo userio12/acs-build-system
+```
+
+### 3. `scripts/mirror_releases.py`
 Mirrors releases and binary assets from upstream repositories into your fork:
 ```bash
 python scripts/mirror_releases.py --source AndroidCSOfficial/acs-build-system --dest userio12/acs-build-system

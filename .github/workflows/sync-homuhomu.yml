@@ -1,0 +1,63 @@
+name: Sync HomuHomu SDK & Build-Tools
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "HomuHomu release version (e.g. 35.0.2, 34.0.5, 36.0.1)"
+        required: true
+        default: "35.0.2"
+      arch:
+        description: "Target architecture (all, aarch64, arm, x86_64)"
+        required: true
+        default: "all"
+      keep_bundle:
+        description: "Also publish complete android-sdk bundle"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Import and Slice HomuHomu SDK
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXTRA_ARGS=""
+          if [ "${{ github.event.inputs.keep_bundle }}" = "true" ]; then
+            EXTRA_ARGS="--keep-bundle"
+          fi
+          python scripts/import_homuhomu_sdk.py \
+            --version "${{ github.event.inputs.version }}" \
+            --arch "${{ github.event.inputs.arch }}" \
+            --dest-repo "${{ github.repository }}" \
+            $EXTRA_ARGS
+
+      - name: Regenerate Manifests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_manifest.py --repo "${{ github.repository }}" --output acs-manifest.json
+
+      - name: Commit and Push Updated Manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add acs-manifest.json manifest.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore(manifest): auto-update for Build-Tools ${{ github.event.inputs.version }}"
+          git push

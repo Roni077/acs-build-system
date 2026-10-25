@@ -1,9 +1,9 @@
 {
-  "manifest_version": "1.0",
-  "generated_at": "2026-10-25T16:31:06Z",
+  "manifest_version": "2.0.0",
+  "generated_at": "2026-10-25T17:15:59Z",
   "organization": "userio12",
   "repository": "acs-build-system",
-  "total_builds": 13,
+  "total_builds": 21,
   "ndk_versions": [
     "29.0.14033849",
     "28.2.13676358",
@@ -14,12 +14,92 @@
     "4.1.1",
     "3.31.6"
   ],
+  "build_tools_versions": [
+    "35.0.2"
+  ],
+  "platform_tools_versions": [
+    "35.0.2"
+  ],
   "supported_architectures": [
     "arm64-v8a",
     "armeabi-v7a",
     "x86_64"
   ],
+  "android_sdk": "https://github.com/userio12/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
+  "cmdline_tools": "https://github.com/userio12/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
+  "build_tools": {
+    "aarch64": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz"
+    },
+    "arm": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz"
+    },
+    "x86_64": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz"
+    }
+  },
+  "platform_tools": {
+    "aarch64": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz"
+    },
+    "arm": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz"
+    },
+    "x86_64": {
+      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
+      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz"
+    }
+  },
   "packages": [
+    {
+      "id": "android-sdk-core",
+      "architecture": "arm64-v8a",
+      "filename": "android-sdk.tar.xz",
+      "version": "sdk",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
+      "encrypted": false,
+      "sha256": "253fab4ff1263ebf78bf89245acde98450ddae83d20ce7fa9d369b3f68f62d9e",
+      "build_type": "android_sdk"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "x86_64",
+      "filename": "platform-tools-35.0.2-x86_64.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
+      "encrypted": false,
+      "sha256": "7deb03393084168fd974cc03036f1bdf5ecd1670060f16852f78ac5dea7f05b9",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "platform-tools-35.0.2-arm.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "5616e1dfabec50bfbe4a020ec99801153dfe816a46827c89c3b69a34b539d544",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "arm64-v8a",
+      "filename": "platform-tools-35.0.2-aarch64.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "81ea25d2c0a549c4270fdde21dba20b209851ad76bab96dd54f2dc4952a832ef",
+      "build_type": "platform_tools"
+    },
     {
       "id": "android-native-kit",
       "architecture": "x86_64",
@@ -109,6 +189,17 @@
       "build_type": "ndk"
     },
     {
+      "id": "android-cmdline-tools",
+      "architecture": "arm64-v8a",
+      "filename": "cmdline-tools.tar.xz",
+      "version": "sdk",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
+      "encrypted": false,
+      "sha256": "aca602848ff3d6044ffa908efd134300d99623327fee06a7886b990b94049bfa",
+      "build_type": "cmdline_tools"
+    },
+    {
       "id": "android-cmake",
       "architecture": "arm64-v8a",
       "filename": "cmake-aarch64-linux-musl.tar.xz",
@@ -162,6 +253,39 @@
       "encrypted": false,
       "sha256": "92c779b969dda55657d9d922391276611f0e6463f9084e21511f736420270e2d",
       "build_type": "cmake"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "x86_64",
+      "filename": "build-tools-35.0.2-x86_64.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
+      "encrypted": false,
+      "sha256": "ab641e3694891bc9a5733f58d2cafa36be5209f2572a208ee222ce1fc052111b",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "build-tools-35.0.2-arm.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "920630b3b53b7900cb99f828d97dae7edbd8ddc3f8e3e184c1d6141bdc109094",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "arm64-v8a",
+      "filename": "build-tools-35.0.2-aarch64.tar.xz",
+      "version": "35.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "9b56535c15d8e11f08cffe8074cb7038c19734116fdc7fd8caf3b21cf178d4ca",
+      "build_type": "build_tools"
     }
   ]
 }

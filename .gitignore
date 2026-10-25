@@ -5,6 +5,7 @@
 !.gitignore
 !README.md
 !acs-manifest.json
+!manifest.json
 
 # Whitelist scripts and automation
 !scripts/
