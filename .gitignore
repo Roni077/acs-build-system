@@ -10,6 +10,8 @@
 # Whitelist scripts and automation
 !scripts/
 !scripts/**
+scripts/__pycache__/
+*.pyc
 
 # Whitelist GitHub Actions
 !.github/
