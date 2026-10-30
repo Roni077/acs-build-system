@@ -3,7 +3,7 @@
 Import, slice, and publish Android SDK components from HomuHomu833/android-sdk-custom.
 
 Usage:
-    python scripts/import_homuhomu_sdk.py --version 35.0.1 [--repo userio12/acs-build-system] [--dry-run]
+    python scripts/import_homuhomu_sdk.py --version 35.0.1 [--repo Roni077/acs-build-system] [--dry-run]
 """
 
 import argparse
@@ -130,7 +130,7 @@ def main():
     parser = argparse.ArgumentParser(description="Import SDK & Build-Tools from HomuHomu833.")
     parser.add_argument("--version", default="35.0.2", help="HomuHomu release version (e.g. 35.0.2 or 35.0.1)")
     parser.add_argument("--source-repo", default="HomuHomu833/android-sdk-custom", help="Source repository")
-    parser.add_argument("--dest-repo", default="userio12/acs-build-system", help="Destination repository")
+    parser.add_argument("--dest-repo", default="Roni077/acs-build-system", help="Destination repository")
     parser.add_argument("--dry-run", action="store_true", help="Slice without publishing GitHub release")
     parser.add_argument("--arch", choices=["all", "aarch64", "arm", "x86_64"], default="all", help="Target architecture")
     parser.add_argument("--keep-bundle", action="store_true", help="Also upload the full android-sdk bundle")

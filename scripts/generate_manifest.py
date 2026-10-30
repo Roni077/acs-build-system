@@ -3,7 +3,7 @@
 Generate and update acs-manifest.json and manifest.json from GitHub Releases.
 
 Usage:
-    python scripts/generate_manifest.py [--repo userio12/acs-build-system] [--output acs-manifest.json]
+    python scripts/generate_manifest.py [--repo Roni077/acs-build-system] [--output acs-manifest.json]
 """
 
 import argparse
@@ -243,7 +243,7 @@ def generate_manifest(repo, output_path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate acs-manifest.json and manifest.json from GitHub Releases.")
-    parser.add_argument("--repo", default="userio12/acs-build-system", help="GitHub repository in owner/repo format")
+    parser.add_argument("--repo", default="Roni077/acs-build-system", help="GitHub repository in owner/repo format")
     parser.add_argument("--output", default="acs-manifest.json", help="Path to write manifest file")
     args = parser.parse_args()
 

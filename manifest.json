@@ -1,7 +1,7 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-10-25T17:15:59Z",
-  "organization": "userio12",
+  "generated_at": "2026-10-30T05:44:38Z",
+  "organization": "Roni077",
   "repository": "acs-build-system",
   "total_builds": 21,
   "ndk_versions": [
@@ -25,34 +25,34 @@
     "armeabi-v7a",
     "x86_64"
   ],
-  "android_sdk": "https://github.com/userio12/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
-  "cmdline_tools": "https://github.com/userio12/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
+  "android_sdk": "https://github.com/Roni077/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
+  "cmdline_tools": "https://github.com/Roni077/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
   "build_tools": {
     "aarch64": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz"
     },
     "arm": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz"
     },
     "x86_64": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz"
     }
   },
   "platform_tools": {
     "aarch64": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz"
     },
     "arm": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz"
     },
     "x86_64": {
-      "_35_0_2": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
-      "_35_0_1": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz"
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz"
     }
   },
   "packages": [
@@ -62,7 +62,7 @@
       "filename": "android-sdk.tar.xz",
       "version": "sdk",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/sdk/android-sdk.tar.xz",
       "encrypted": false,
       "sha256": "253fab4ff1263ebf78bf89245acde98450ddae83d20ce7fa9d369b3f68f62d9e",
       "build_type": "android_sdk"
@@ -73,7 +73,7 @@
       "filename": "platform-tools-35.0.2-x86_64.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
       "encrypted": false,
       "sha256": "7deb03393084168fd974cc03036f1bdf5ecd1670060f16852f78ac5dea7f05b9",
       "build_type": "platform_tools"
@@ -84,7 +84,7 @@
       "filename": "platform-tools-35.0.2-arm.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
       "encrypted": false,
       "sha256": "5616e1dfabec50bfbe4a020ec99801153dfe816a46827c89c3b69a34b539d544",
       "build_type": "platform_tools"
@@ -95,7 +95,7 @@
       "filename": "platform-tools-35.0.2-aarch64.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
       "encrypted": false,
       "sha256": "81ea25d2c0a549c4270fdde21dba20b209851ad76bab96dd54f2dc4952a832ef",
       "build_type": "platform_tools"
@@ -106,7 +106,7 @@
       "filename": "android-native-development-kit-x64-bundle-v2",
       "version": "29.0.14033849",
       "bundle_version": "2",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-x64-bundle-v2",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-x64-bundle-v2",
       "encrypted": true,
       "sha256": "da392b625a042c95357e11733de98d24d913895f14ac8a35febb8d41e6f4478c",
       "build_type": "ndk"
@@ -117,7 +117,7 @@
       "filename": "android-native-development-kit-arm32-bundle-v2",
       "version": "29.0.14033849",
       "bundle_version": "2",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-arm32-bundle-v2",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-arm32-bundle-v2",
       "encrypted": true,
       "sha256": "5938d65d25470d07315756448ddfe0683f9a287fe33472377e215fa46815b1d7",
       "build_type": "ndk"
@@ -128,7 +128,7 @@
       "filename": "android-native-development-kit-arm64-bundle-v2",
       "version": "29.0.14033849",
       "bundle_version": "2",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-arm64-bundle-v2",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14033849/android-native-development-kit-arm64-bundle-v2",
       "encrypted": true,
       "sha256": "01052a8371938022b6d9c09549ee6a11297621a55c33226673aa0651de1deb13",
       "build_type": "ndk"
@@ -139,7 +139,7 @@
       "filename": "android-ndk-r29-aarch64-linux-android.tar.xz",
       "version": "29.0.14033849",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v29.0.14033849/android-ndk-r29-aarch64-linux-android.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14033849/android-ndk-r29-aarch64-linux-android.tar.xz",
       "encrypted": false,
       "sha256": "cb7e2be23c9029f928da61bfdb5314a7ff7bae972c4ec55c353bb08c4874d15d",
       "build_type": "ndk"
@@ -150,7 +150,7 @@
       "filename": "android-native-development-kit-x64-bundle-v1",
       "version": "28.2.13676358",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-x64-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-x64-bundle-v1",
       "encrypted": true,
       "sha256": "8e534d2a49b3cbd739f4cdaefd0d902658faa71efeb32186c8d990968cd1b4dd",
       "build_type": "ndk"
@@ -161,7 +161,7 @@
       "filename": "android-native-development-kit-arm32-bundle-v1",
       "version": "28.2.13676358",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm32-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm32-bundle-v1",
       "encrypted": true,
       "sha256": "96d743579b12315e3c31d954aaeaea500fd06139047f3c7b141947d7111357ee",
       "build_type": "ndk"
@@ -172,7 +172,7 @@
       "filename": "android-native-development-kit-arm64-bundle-v1",
       "version": "28.2.13676358",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm64-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm64-bundle-v1",
       "encrypted": true,
       "sha256": "87a9315e9792ceba693bef2d8d4b20e0218cc7bb4821574bab525ff496b7e63b",
       "build_type": "ndk"
@@ -183,7 +183,7 @@
       "filename": "android-ndk-r27d-aarch64-linux-android.tar.xz",
       "version": "27.3.13750724",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v27.3.13750724/android-ndk-r27d-aarch64-linux-android.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v27.3.13750724/android-ndk-r27d-aarch64-linux-android.tar.xz",
       "encrypted": false,
       "sha256": "0b7ba8e55bbb9ebffc0ecf56d000c4b61aad86da4a51c4d73fc008a7661e13fb",
       "build_type": "ndk"
@@ -194,7 +194,7 @@
       "filename": "cmdline-tools.tar.xz",
       "version": "sdk",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
       "encrypted": false,
       "sha256": "aca602848ff3d6044ffa908efd134300d99623327fee06a7886b990b94049bfa",
       "build_type": "cmdline_tools"
@@ -205,7 +205,7 @@
       "filename": "cmake-aarch64-linux-musl.tar.xz",
       "version": "4.1.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v4.1.2/cmake-aarch64-linux-musl.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.2/cmake-aarch64-linux-musl.tar.xz",
       "encrypted": false,
       "sha256": "d412df999891e5c3e4c2bff0d26827c5c309542c485e11c3810c1ddd01edde72",
       "build_type": "cmake"
@@ -216,7 +216,7 @@
       "filename": "android-cmake-build-tools-x64-bundle-v1",
       "version": "4.1.1",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-x64-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-x64-bundle-v1",
       "encrypted": true,
       "sha256": "df899829cbc52596eff6be6e6b2954f9b8f5f9f1ccc027f2814f19cd16f2309d",
       "build_type": "cmake"
@@ -227,7 +227,7 @@
       "filename": "android-cmake-build-tools-arm32-bundle-v1",
       "version": "4.1.1",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-arm32-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-arm32-bundle-v1",
       "encrypted": true,
       "sha256": "1516fff1e4324a88a519f97614e570fbeb2f48e674d6572496ace588ba075337",
       "build_type": "cmake"
@@ -238,7 +238,7 @@
       "filename": "android-cmake-build-tools-arm64-bundle-v1",
       "version": "4.1.1",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-arm64-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.1/android-cmake-build-tools-arm64-bundle-v1",
       "encrypted": true,
       "sha256": "08055d160e592d838af4d57ce5561792712b0ab1ced18cd250dd16fc65b25898",
       "build_type": "cmake"
@@ -249,7 +249,7 @@
       "filename": "cmake-v3.31.6-aarch64.tar.xz",
       "version": "3.31.6",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v3.31.6/cmake-v3.31.6-aarch64.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.6/cmake-v3.31.6-aarch64.tar.xz",
       "encrypted": false,
       "sha256": "92c779b969dda55657d9d922391276611f0e6463f9084e21511f736420270e2d",
       "build_type": "cmake"
@@ -260,7 +260,7 @@
       "filename": "build-tools-35.0.2-x86_64.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
       "encrypted": false,
       "sha256": "ab641e3694891bc9a5733f58d2cafa36be5209f2572a208ee222ce1fc052111b",
       "build_type": "build_tools"
@@ -271,7 +271,7 @@
       "filename": "build-tools-35.0.2-arm.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
       "encrypted": false,
       "sha256": "920630b3b53b7900cb99f828d97dae7edbd8ddc3f8e3e184c1d6141bdc109094",
       "build_type": "build_tools"
@@ -282,7 +282,7 @@
       "filename": "build-tools-35.0.2-aarch64.tar.xz",
       "version": "35.0.2",
       "bundle_version": "-1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
       "encrypted": false,
       "sha256": "9b56535c15d8e11f08cffe8074cb7038c19734116fdc7fd8caf3b21cf178d4ca",
       "build_type": "build_tools"

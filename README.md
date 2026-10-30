@@ -33,7 +33,7 @@ Toolchains hosted here are sourced from and based on community builds by [Homura
   - HomuHomu833/cmake-custom (3.18..4.1.2)
          │
          ▼
-[ userio12/acs-build-system ]
+[ Roni077/acs-build-system ]
   - GitHub Releases (Tagged assets)
   - scripts/generate_manifest.py (SHA-256 calculation)
   - acs-manifest.json (Central Index)
@@ -55,7 +55,7 @@ The central index is [`acs-manifest.json`](./acs-manifest.json). Client setup sc
 {
   "manifest_version": "1.0",
   "generated_at": "2026-10-25T15:00:00Z",
-  "organization": "userio12",
+  "organization": "Roni077",
   "repository": "acs-build-system",
   "total_builds": 13,
   "ndk_versions": ["29.0.14033849", "28.2.13676358", "27.3.13750724"],
@@ -68,7 +68,7 @@ The central index is [`acs-manifest.json`](./acs-manifest.json). Client setup sc
       "filename": "android-native-development-kit-arm64-bundle-v1",
       "version": "28.2.13676358",
       "bundle_version": "1",
-      "url": "https://github.com/userio12/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm64-bundle-v1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.2.13676358/android-native-development-kit-arm64-bundle-v1",
       "encrypted": true,
       "sha256": "87a9315e9792ceba693bef2d8d4b20e0218cc7bb4821574bab525ff496b7e63b",
       "build_type": "ndk"
@@ -108,19 +108,19 @@ The central index is [`acs-manifest.json`](./acs-manifest.json). Client setup sc
 ### 1. `scripts/generate_manifest.py`
 Scans all GitHub Releases in this repository, inspects each asset, calculates/verifies SHA-256 sums, and outputs dual-compatibility `acs-manifest.json` and `manifest.json`:
 ```bash
-python scripts/generate_manifest.py --repo userio12/acs-build-system --output acs-manifest.json
+python scripts/generate_manifest.py --repo Roni077/acs-build-system --output acs-manifest.json
 ```
 
 ### 2. `scripts/import_homuhomu_sdk.py`
 Imports, slices, and publishes Android SDK, Build-Tools, and Platform-Tools from [HomuHomu833/android-sdk-custom](https://github.com/HomuHomu833/android-sdk-custom):
 ```bash
-python scripts/import_homuhomu_sdk.py --version 35.0.2 --dest-repo userio12/acs-build-system
+python scripts/import_homuhomu_sdk.py --version 35.0.2 --dest-repo Roni077/acs-build-system
 ```
 
 ### 3. `scripts/mirror_releases.py`
 Mirrors releases and binary assets from upstream repositories into your fork:
 ```bash
-python scripts/mirror_releases.py --source AndroidCSOfficial/acs-build-system --dest userio12/acs-build-system
+python scripts/mirror_releases.py --source AndroidCSOfficial/acs-build-system --dest Roni077/acs-build-system
 ```
 
 ---
@@ -133,7 +133,7 @@ To add a new toolchain version (e.g. NDK r30 or CMake 4.2):
    Download pre-compiled binaries from [HomuHomu833/android-ndk-custom](https://github.com/HomuHomu833/android-ndk-custom/releases).
 2. **Create GitHub Release**:
    ```bash
-   gh release create v30.0.0 android-ndk-r30-aarch64.tar.xz -t "v30.0.0" -R userio12/acs-build-system
+   gh release create v30.0.0 android-ndk-r30-aarch64.tar.xz -t "v30.0.0" -R Roni077/acs-build-system
    ```
 3. **Automated Manifest Update**:
    The included GitHub Actions workflow (`.github/workflows/update-manifest.yml`) automatically triggers on new releases, adds the package to `acs-manifest.json`, and commits the changes back to `main`.
@@ -145,7 +145,7 @@ To add a new toolchain version (e.g. NDK r30 or CMake 4.2):
 In your `android-code-studio` repository, configure the `idesetup` bootstrap script to query your build system:
 
 ```bash
-NDK_MANIFEST_FILE_URL="https://raw.githubusercontent.com/userio12/acs-build-system/main/acs-manifest.json"
+NDK_MANIFEST_FILE_URL="https://raw.githubusercontent.com/Roni077/acs-build-system/main/acs-manifest.json"
 ```
 
 Clients executing onboarding will automatically fetch packages directly from your repository with full integrity verification.

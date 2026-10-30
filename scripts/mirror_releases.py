@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Mirror releases from a source repository (e.g. AndroidCSOfficial/acs-build-system)
-to a destination repository (e.g. userio12/acs-build-system).
+to a destination repository (e.g. Roni077/acs-build-system).
 
 Usage:
-    python scripts/mirror_releases.py [--source AndroidCSOfficial/acs-build-system] [--dest userio12/acs-build-system]
+    python scripts/mirror_releases.py [--source AndroidCSOfficial/acs-build-system] [--dest Roni077/acs-build-system]
 """
 
 import argparse
@@ -107,7 +107,7 @@ def mirror_releases(source_repo, dest_repo):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Mirror GitHub releases between repositories.")
     parser.add_argument("--source", default="AndroidCSOfficial/acs-build-system", help="Source repository")
-    parser.add_argument("--dest", default="userio12/acs-build-system", help="Destination repository")
+    parser.add_argument("--dest", default="Roni077/acs-build-system", help="Destination repository")
     args = parser.parse_args()
 
     mirror_releases(args.source, args.dest)
