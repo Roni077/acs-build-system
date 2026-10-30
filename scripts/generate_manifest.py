@@ -60,6 +60,8 @@ def detect_package_id(filename):
         return "android-cmdline-tools", "cmdline_tools"
     elif "android-sdk" in fn:
         return "android-sdk-core", "android_sdk"
+    elif "flutter" in fn:
+        return "flutter-sdk", "flutter_sdk"
     elif "ndk" in fn or "native" in fn:
         return "android-native-kit", "ndk"
     return "android-native-kit", "ndk"
@@ -115,6 +117,7 @@ def generate_manifest(repo, output_path):
     cmake_versions = set()
     build_tools_versions = set()
     platform_tools_versions = set()
+    flutter_versions = set()
     supported_archs = set()
 
     # Mappings for idesetup jq queries
@@ -136,28 +139,36 @@ def generate_manifest(repo, output_path):
             acs_arch, ide_arch = detect_architecture(filename)
             bundle_ver = detect_bundle_version(filename)
             is_encrypted = "bundle" in filename.lower()
+            pkg_version = version
 
-            if build_type == "ndk":
-                ndk_versions.add(version)
+            if build_type == "flutter_sdk":
+                m_ver = re.search(r"flutter[_-]v?([0-9\.]+)", filename, re.IGNORECASE)
+                if m_ver:
+                    pkg_version = m_ver.group(1).rstrip("-.")
+                elif tag_name.startswith("flutter-"):
+                    pkg_version = tag_name.replace("flutter-", "").lstrip("v")
+                flutter_versions.add(pkg_version)
+            elif build_type == "ndk":
+                ndk_versions.add(pkg_version)
             elif build_type == "cmake":
-                cmake_versions.add(version)
+                cmake_versions.add(pkg_version)
             elif build_type == "build_tools":
-                build_tools_versions.add(version)
-                ver_key = f"_{version.replace('.', '_')}"
+                build_tools_versions.add(pkg_version)
+                ver_key = f"_{pkg_version.replace('.', '_')}"
                 if ide_arch in build_tools_map:
                     build_tools_map[ide_arch][ver_key] = download_url
-                    if version == "35.0.2" and "_35_0_1" not in build_tools_map[ide_arch]:
+                    if pkg_version == "35.0.2" and "_35_0_1" not in build_tools_map[ide_arch]:
                         build_tools_map[ide_arch]["_35_0_1"] = download_url
-                    elif version == "34.0.5" and "_34_0_4" not in build_tools_map[ide_arch]:
+                    elif pkg_version == "34.0.5" and "_34_0_4" not in build_tools_map[ide_arch]:
                         build_tools_map[ide_arch]["_34_0_4"] = download_url
             elif build_type == "platform_tools":
-                platform_tools_versions.add(version)
-                ver_key = f"_{version.replace('.', '_')}"
+                platform_tools_versions.add(pkg_version)
+                ver_key = f"_{pkg_version.replace('.', '_')}"
                 if ide_arch in platform_tools_map:
                     platform_tools_map[ide_arch][ver_key] = download_url
-                    if version == "35.0.2" and "_35_0_1" not in platform_tools_map[ide_arch]:
+                    if pkg_version == "35.0.2" and "_35_0_1" not in platform_tools_map[ide_arch]:
                         platform_tools_map[ide_arch]["_35_0_1"] = download_url
-                    elif version == "34.0.5" and "_34_0_4" not in platform_tools_map[ide_arch]:
+                    elif pkg_version == "34.0.5" and "_34_0_4" not in platform_tools_map[ide_arch]:
                         platform_tools_map[ide_arch]["_34_0_4"] = download_url
             elif build_type == "android_sdk":
                 if not android_sdk_url:
@@ -169,7 +180,7 @@ def generate_manifest(repo, output_path):
             supported_archs.add(acs_arch)
 
             # Lookup cached checksum or compute
-            key = (filename, version)
+            key = (filename, pkg_version)
             sha256_hash = existing_checksums.get(key, "")
             if not sha256_hash:
                 for (fn, ver), sha in existing_checksums.items():
@@ -186,7 +197,7 @@ def generate_manifest(repo, output_path):
                 "id": pkg_id,
                 "architecture": acs_arch,
                 "filename": filename,
-                "version": version,
+                "version": pkg_version,
                 "bundle_version": bundle_ver,
                 "url": download_url,
                 "encrypted": is_encrypted,
@@ -209,6 +220,7 @@ def generate_manifest(repo, output_path):
         "cmake_versions": sorted(list(cmake_versions), reverse=True),
         "build_tools_versions": sorted(list(build_tools_versions), reverse=True),
         "platform_tools_versions": sorted(list(platform_tools_versions), reverse=True),
+        "flutter_versions": sorted(list(flutter_versions), reverse=True),
         "supported_architectures": sorted(list(supported_archs)),
 
         # idesetup compatibility fields
@@ -237,6 +249,7 @@ def generate_manifest(repo, output_path):
     print(f"CMake versions: {manifest['cmake_versions']}")
     print(f"Build-Tools versions: {manifest['build_tools_versions']}")
     print(f"Platform-Tools versions: {manifest['platform_tools_versions']}")
+    print(f"Flutter versions: {manifest['flutter_versions']}")
     print(f"Supported architectures: {manifest['supported_architectures']}")
     return True
 

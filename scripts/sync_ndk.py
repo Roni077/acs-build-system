@@ -106,6 +106,11 @@ def sync_ndk(source_repo, dest_repo, target_tag=None, target_arch="all", dry_run
 
         print(f"\nEvaluating upstream NDK release: {tag} ({len(matched_assets)} ARM architectures matched)")
 
+        if dry_run:
+            print(f"  [Dry Run] Found upstream NDK release {tag} with ARM assets: {[a.get('name') for a in matched_assets.values()]}. Would process and publish.")
+            new_releases_processed += 1
+            continue
+
         temp_dir = tempfile.mkdtemp(prefix=f"sync_ndk_{tag}_")
         downloaded_files = []
         canonical_revision = None

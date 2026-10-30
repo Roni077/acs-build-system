@@ -1,6 +1,6 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-10-30T05:44:38Z",
+  "generated_at": "2026-10-30T08:08:45Z",
   "organization": "Roni077",
   "repository": "acs-build-system",
   "total_builds": 21,
@@ -20,6 +20,7 @@
   "platform_tools_versions": [
     "35.0.2"
   ],
+  "flutter_versions": [],
   "supported_architectures": [
     "arm64-v8a",
     "armeabi-v7a",
