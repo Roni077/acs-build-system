@@ -1,9 +1,10 @@
 name: Auto-Sync Dynamic NDK Releases
 
+concurrency:
+  group: manifest-sync
+  cancel-in-progress: false
+
 on:
-  schedule:
-    # Runs daily at 02:00 UTC
-    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
       upstream_repo:
@@ -65,13 +66,19 @@ jobs:
           python scripts/generate_manifest.py --repo "${{ github.repository }}" --output acs-manifest.json
 
       - name: Commit and Push Updated Manifest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/generate_manifest.py --repo "${{ github.repository }}" --output acs-manifest.json
           git add acs-manifest.json manifest.json
           if git diff --staged --quiet; then
             echo "No changes in manifest."
           else
             git commit -m "chore(manifest): auto-update manifests with new NDK releases"
+            git pull --rebase origin main
             git push origin main
           fi

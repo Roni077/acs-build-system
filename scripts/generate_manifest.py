@@ -89,8 +89,8 @@ def get_existing_manifest(path):
 def compute_remote_sha256(url):
     """Download a remote file and compute its SHA-256 hash."""
     h = hashlib.sha256()
-    print(f"Streaming and hashing: {url} ...")
-    with urllib.request.urlopen(url) as resp:
+    print(f"Streaming and hashing: {url} ...", flush=True)
+    with urllib.request.urlopen(url, timeout=30) as resp:
         while chunk := resp.read(65536):
             h.update(chunk)
     return h.hexdigest()

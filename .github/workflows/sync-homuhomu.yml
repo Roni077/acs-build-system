@@ -1,5 +1,9 @@
 name: Sync HomuHomu SDK & Build-Tools
 
+concurrency:
+  group: manifest-sync
+  cancel-in-progress: false
+
 on:
   workflow_dispatch:
     inputs:
@@ -59,5 +63,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add acs-manifest.json manifest.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore(manifest): auto-update for Build-Tools ${{ github.event.inputs.version }}"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes in manifest."
+          else
+            git commit -m "chore(manifest): auto-update for Build-Tools ${{ github.event.inputs.version }}"
+            git pull --rebase origin main
+            git push origin main
+          fi

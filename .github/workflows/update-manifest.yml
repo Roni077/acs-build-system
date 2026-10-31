@@ -1,5 +1,9 @@
 name: Update ACS Manifest
 
+concurrency:
+  group: manifest-sync
+  cancel-in-progress: false
+
 on:
   release:
     types: [published, edited, deleted]
@@ -38,5 +42,6 @@ jobs:
             echo "No changes to manifests"
           else
             git commit -m "chore(manifest): auto-update manifests from releases"
+            git pull --rebase origin main
             git push origin main
           fi
