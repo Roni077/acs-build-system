@@ -1,13 +1,19 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-10-30T08:08:45Z",
+  "generated_at": "2026-10-31T07:58:49Z",
   "organization": "Roni077",
   "repository": "acs-build-system",
-  "total_builds": 21,
+  "total_builds": 33,
   "ndk_versions": [
+    "30.0.16248370",
+    "29.0.14206865",
     "29.0.14033849",
     "28.2.13676358",
-    "27.3.13750724"
+    "28.0.13004108",
+    "27.3.13750724",
+    "27.0.12077973",
+    "26.0.10792818",
+    "25.0.8775105"
   ],
   "cmake_versions": [
     "4.1.2",
@@ -103,6 +109,50 @@
     },
     {
       "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r30-armv7a-linux-androideabi.tar.xz",
+      "version": "30.0.16248370",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v30.0.16248370/android-ndk-r30-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "678bff9003160c3c6d212ac713f9a1205869c30706b05646bd098e8aa1008420",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r30-aarch64-linux-android.tar.xz",
+      "version": "30.0.16248370",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v30.0.16248370/android-ndk-r30-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "406afc90e64eee11caf39c0eadb0fc829b126387f18e50562320cdc6162e5a2b",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r29-armv7a-linux-androideabi.tar.xz",
+      "version": "29.0.14206865",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14206865/android-ndk-r29-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "078648dfbbfbde0287b189da3025069374c8b89b2ae83541741b6f8291dc3cf4",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r29-aarch64-linux-android.tar.xz",
+      "version": "29.0.14206865",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v29.0.14206865/android-ndk-r29-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "cb7e2be23c9029f928da61bfdb5314a7ff7bae972c4ec55c353bb08c4874d15d",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
       "architecture": "x86_64",
       "filename": "android-native-development-kit-x64-bundle-v2",
       "version": "29.0.14033849",
@@ -180,6 +230,28 @@
     },
     {
       "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r28-armv7a-linux-androideabi.tar.xz",
+      "version": "28.0.13004108",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.0.13004108/android-ndk-r28-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "15e14bd7541bf923a9373460f312ca45dc4308105eb566349f699354e715d91a",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r28-aarch64-linux-android.tar.xz",
+      "version": "28.0.13004108",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v28.0.13004108/android-ndk-r28-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "5dee54fb382e5ee7c6ed0e328157df5f32c8f5933c225b0293ced6a1bf42fad7",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
       "architecture": "arm64-v8a",
       "filename": "android-ndk-r27d-aarch64-linux-android.tar.xz",
       "version": "27.3.13750724",
@@ -187,6 +259,72 @@
       "url": "https://github.com/Roni077/acs-build-system/releases/download/v27.3.13750724/android-ndk-r27d-aarch64-linux-android.tar.xz",
       "encrypted": false,
       "sha256": "0b7ba8e55bbb9ebffc0ecf56d000c4b61aad86da4a51c4d73fc008a7661e13fb",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r27-armv7a-linux-androideabi.tar.xz",
+      "version": "27.0.12077973",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v27.0.12077973/android-ndk-r27-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "23a3dc622774ce26c7bd1c503b922d8d1c0d5d355f99e4c269ef5bb0c3a1dcdb",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r27-aarch64-linux-android.tar.xz",
+      "version": "27.0.12077973",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v27.0.12077973/android-ndk-r27-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "819b47ed906d4b1282ceaf4f036be69393098a26575369aac3e6526d29f81b7c",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r26-armv7a-linux-androideabi.tar.xz",
+      "version": "26.0.10792818",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v26.0.10792818/android-ndk-r26-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "6966c61f51f5d495431403843f1b3fe2c42c9366e2869d54de380bed115dab8f",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r26-aarch64-linux-android.tar.xz",
+      "version": "26.0.10792818",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v26.0.10792818/android-ndk-r26-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "d9466fde4c6c0e65652ddc2193113fe5a4c99cff306e85fb8e6c3e10f2bd245e",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r25-armv7a-linux-androideabi.tar.xz",
+      "version": "25.0.8775105",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v25.0.8775105/android-ndk-r25-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "a87795ec0a9a0d8263dd272dbaefa934ce81948cd898a7e4acb96051f82a18b3",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "arm64-v8a",
+      "filename": "android-ndk-r25-aarch64-linux-android.tar.xz",
+      "version": "25.0.8775105",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v25.0.8775105/android-ndk-r25-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "f66b449493fabeb67bc356de7466eb6fdabb1547a2fe742702ca759ffadd672d",
       "build_type": "ndk"
     },
     {
