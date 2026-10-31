@@ -1,9 +1,9 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-10-31T07:58:49Z",
+  "generated_at": "2026-10-31T16:53:11Z",
   "organization": "Roni077",
   "repository": "acs-build-system",
-  "total_builds": 33,
+  "total_builds": 113,
   "ndk_versions": [
     "30.0.16248370",
     "29.0.14206865",
@@ -18,15 +18,68 @@
   "cmake_versions": [
     "4.1.2",
     "4.1.1",
-    "3.31.6"
+    "4.1.0",
+    "4.0.3",
+    "4.0.2",
+    "3.6.0",
+    "3.31.6",
+    "3.31.5",
+    "3.31.4",
+    "3.31.1",
+    "3.31.0",
+    "3.30.5",
+    "3.30.4",
+    "3.30.3",
+    "3.22.1",
+    "3.18.1",
+    "3.10.2"
   ],
   "build_tools_versions": [
-    "35.0.2"
+    "37.0.0",
+    "36.0.1",
+    "36.0.0",
+    "35.0.2",
+    "35.0.1"
   ],
   "platform_tools_versions": [
-    "35.0.2"
+    "37.0.0",
+    "36.0.1",
+    "36.0.0",
+    "35.0.2",
+    "35.0.1"
   ],
-  "flutter_versions": [],
+  "flutter_versions": [
+    "3.47.9",
+    "3.47.8",
+    "3.47.7",
+    "3.47.6",
+    "3.47.5",
+    "3.47.4",
+    "3.47.3",
+    "3.47.2",
+    "3.47.1",
+    "3.47.0",
+    "3.44.9",
+    "3.44.8",
+    "3.44.7",
+    "3.44.6",
+    "3.44.5",
+    "3.44.4",
+    "3.44.3",
+    "3.44.2",
+    "3.44.1",
+    "3.44.0",
+    "3.41.9",
+    "3.41.8",
+    "3.41.7",
+    "3.41.6",
+    "3.41.5",
+    "3.41.4",
+    "3.38.9",
+    "3.38.7",
+    "3.38.5",
+    "3.36.0"
+  ],
   "supported_architectures": [
     "arm64-v8a",
     "armeabi-v7a",
@@ -36,12 +89,18 @@
   "cmdline_tools": "https://github.com/Roni077/acs-build-system/releases/download/sdk/cmdline-tools.tar.xz",
   "build_tools": {
     "aarch64": {
-      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
-      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz"
+      "_37_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/build-tools-37.0.0-aarch64.tar.xz",
+      "_36_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/build-tools-36.0.1-aarch64.tar.xz",
+      "_36_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/build-tools-36.0.0-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/build-tools-35.0.1-aarch64.tar.xz",
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz"
     },
     "arm": {
-      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
-      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz"
+      "_37_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/build-tools-37.0.0-arm.tar.xz",
+      "_36_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/build-tools-36.0.1-arm.tar.xz",
+      "_36_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/build-tools-36.0.0-arm.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/build-tools-35.0.1-arm.tar.xz",
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz"
     },
     "x86_64": {
       "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-x86_64.tar.xz",
@@ -50,12 +109,18 @@
   },
   "platform_tools": {
     "aarch64": {
-      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
-      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz"
+      "_37_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/platform-tools-37.0.0-aarch64.tar.xz",
+      "_36_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/platform-tools-36.0.1-aarch64.tar.xz",
+      "_36_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/platform-tools-36.0.0-aarch64.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/platform-tools-35.0.1-aarch64.tar.xz",
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz"
     },
     "arm": {
-      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
-      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz"
+      "_37_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/platform-tools-37.0.0-arm.tar.xz",
+      "_36_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/platform-tools-36.0.1-arm.tar.xz",
+      "_36_0_0": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/platform-tools-36.0.0-arm.tar.xz",
+      "_35_0_1": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/platform-tools-35.0.1-arm.tar.xz",
+      "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz"
     },
     "x86_64": {
       "_35_0_2": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-x86_64.tar.xz",
@@ -63,6 +128,336 @@
     }
   },
   "packages": [
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.9-1_aarch64.deb",
+      "version": "3.47.9",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.9/flutter_3.47.9-1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "8a5ee969c1c671360054bf26b992b93b9770372ae6673dfdc6155bd4191dc981",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.8-6_aarch64.deb",
+      "version": "3.47.8",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.8/flutter_3.47.8-6_aarch64.deb",
+      "encrypted": false,
+      "sha256": "9abd5b3048202475407804618605d49861aec73da414a1223db2f0cfc3f2fe90",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.7-1_aarch64.deb",
+      "version": "3.47.7",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.7/flutter_3.47.7-1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "c2f1b8cc2c9065ff8b96addb6c9d76d3aecb3205465fb211674d5a213ed6de85",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.6-1_aarch64.deb",
+      "version": "3.47.6",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.6/flutter_3.47.6-1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "d08202aa6da9f90b47ecec36a284b53d5a255b0b310c708afacefb92a70df866",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.5-1_aarch64.deb",
+      "version": "3.47.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.5/flutter_3.47.5-1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "0933e12293012bdf69b5c01dc4375593653ff8c549a9f684d6bbaf0b6bfb1216",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.4_aarch64.deb",
+      "version": "3.47.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.4/flutter_3.47.4_aarch64.deb",
+      "encrypted": false,
+      "sha256": "378181c572d86492e1253f9ca23669dc585cf0b59d38228fd758d78fc6cee732",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.3_aarch64.deb",
+      "version": "3.47.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.3/flutter_3.47.3_aarch64.deb",
+      "encrypted": false,
+      "sha256": "9b85452c1ed90ee24f0a56f0b77d9036497b54fa302e1d3dadda588322cd2e6f",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.2_aarch64.deb",
+      "version": "3.47.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.2/flutter_3.47.2_aarch64.deb",
+      "encrypted": false,
+      "sha256": "4443a27c2f528cb093fedcdb994e9f3342147669699c5d695fd2da6d553b98e0",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.1_aarch64.deb",
+      "version": "3.47.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.1/flutter_3.47.1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "7a218a8dd7ca410baa6bbc18a25ddfa733e41e240242900f3a06a50b727812e4",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.47.0_aarch64.deb",
+      "version": "3.47.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.47.0/flutter_3.47.0_aarch64.deb",
+      "encrypted": false,
+      "sha256": "23b0e3c243a9d0d0f0f032dad531e94f4b00da0f5e98cc6375ad70478de54a8a",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.9_aarch64.deb",
+      "version": "3.44.9",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.9/flutter_3.44.9_aarch64.deb",
+      "encrypted": false,
+      "sha256": "2afd7f10d770c5736db7c322c3afdb0a96c10bebb52c24e6043a730ea98828ab",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.8_aarch64.deb",
+      "version": "3.44.8",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.8/flutter_3.44.8_aarch64.deb",
+      "encrypted": false,
+      "sha256": "d7e8e62ce6748b2a9e912e282954bb4d5c12c3aaa366f2168920e8b4171c745a",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.7_aarch64.deb",
+      "version": "3.44.7",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.7/flutter_3.44.7_aarch64.deb",
+      "encrypted": false,
+      "sha256": "9e973918e531d5906217dd2617621ceec66a600094ab9cc9f9b4753ca528a8ec",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.6_aarch64.deb",
+      "version": "3.44.6",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.6/flutter_3.44.6_aarch64.deb",
+      "encrypted": false,
+      "sha256": "5bc850f27ea0e656ebacd2606fdb76e3670e9230ededfb32b80bd4cb13207b8f",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.5_aarch64.deb",
+      "version": "3.44.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.5/flutter_3.44.5_aarch64.deb",
+      "encrypted": false,
+      "sha256": "3cba73f97ba781511dcfbda753876483a5b85e90d59fd3ba09a1fd48d4368c9b",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.4_aarch64.deb",
+      "version": "3.44.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.4/flutter_3.44.4_aarch64.deb",
+      "encrypted": false,
+      "sha256": "18c0b4cb362cd52ab93ad74d8e6d3a99b8e6893a5a69041d17afaed0128a594a",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.3_aarch64.deb",
+      "version": "3.44.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.3/flutter_3.44.3_aarch64.deb",
+      "encrypted": false,
+      "sha256": "f5b5f286d04a458d35a693f19cb226f4ec846bb93f30d2b7eaab6d7c477fe0d1",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.2_aarch64.deb",
+      "version": "3.44.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.2/flutter_3.44.2_aarch64.deb",
+      "encrypted": false,
+      "sha256": "1734a610c6ad5577ec94e2894263f759bf0800d8fcc53cdfc4b4f5509b5fc090",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.1_aarch64.deb",
+      "version": "3.44.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.1/flutter_3.44.1_aarch64.deb",
+      "encrypted": false,
+      "sha256": "218d6ab2ec8466ace749e1601f32cbb12aaeabba55561effab02c9dbfc570d52",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.44.0_aarch64.deb",
+      "version": "3.44.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.44.0/flutter_3.44.0_aarch64.deb",
+      "encrypted": false,
+      "sha256": "d9025200b18b087d99b91d5ea2095deb2a55c5192e09294e30df136ca5489d83",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.9_aarch64.deb",
+      "version": "3.41.9",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.9/flutter_3.41.9_aarch64.deb",
+      "encrypted": false,
+      "sha256": "9e5a946b6cc1e898339de68f555e25367194a34ab563ff52df076d16337a170a",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.8_aarch64.deb",
+      "version": "3.41.8",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.8/flutter_3.41.8_aarch64.deb",
+      "encrypted": false,
+      "sha256": "7354c4d93d9a29ea868c6ce565e4ee685ad8996ee3d5a02f96932a242c2045fc",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.7_aarch64.deb",
+      "version": "3.41.7",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.7/flutter_3.41.7_aarch64.deb",
+      "encrypted": false,
+      "sha256": "8e2a28dd31c3fe5d2d925358232516e6b65963ee8d999cdabe72c8f300f72304",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.6_aarch64.deb",
+      "version": "3.41.6",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.6/flutter_3.41.6_aarch64.deb",
+      "encrypted": false,
+      "sha256": "63d742bfe69c0f309c3b8e6e1166352337414c9a444e7ba99316f8e368053d1b",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.5_aarch64.deb",
+      "version": "3.41.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.5/flutter_3.41.5_aarch64.deb",
+      "encrypted": false,
+      "sha256": "8d377f7139162569caeb2a190481c5f9095bac7141ff788c3c1a508c6ef81a59",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.41.4_aarch64.deb",
+      "version": "3.41.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.41.4/flutter_3.41.4_aarch64.deb",
+      "encrypted": false,
+      "sha256": "2e8530a68a638f78c09fdefcb414f56ace7d49f1957daa9adc34108d1d1ef3e4",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.38.9_aarch64.deb",
+      "version": "3.38.9",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.38.9/flutter_3.38.9_aarch64.deb",
+      "encrypted": false,
+      "sha256": "70ec4d5d872c3c5289835cac266f65cfeea2d33086d3e4b1dcbc875106013acf",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.38.7_aarch64.deb",
+      "version": "3.38.7",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.38.7/flutter_3.38.7_aarch64.deb",
+      "encrypted": false,
+      "sha256": "25d792b9088053c446d44a82bfaeb7225d8c3ca68b01a30448e8e9e2d3039a56",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.38.5_aarch64.deb",
+      "version": "3.38.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.38.5/flutter_3.38.5_aarch64.deb",
+      "encrypted": false,
+      "sha256": "7ea483b0096441f7e992e8e81a820e9b2d5b0760c131cbde6eefa0ac01e096ef",
+      "build_type": "flutter_sdk"
+    },
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.36.0-0.5.pre_aarch64.deb",
+      "version": "3.36.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.36.0-0.5.pre/flutter_3.36.0-0.5.pre_aarch64.deb",
+      "encrypted": false,
+      "sha256": "f8b6ae295b2cade2a2c7dadf48ff2af6552a6a920e32f111d37d52b1efca1953",
+      "build_type": "flutter_sdk"
+    },
     {
       "id": "android-sdk-core",
       "architecture": "arm64-v8a",
@@ -73,6 +468,72 @@
       "encrypted": false,
       "sha256": "253fab4ff1263ebf78bf89245acde98450ddae83d20ce7fa9d369b3f68f62d9e",
       "build_type": "android_sdk"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "platform-tools-37.0.0-arm.tar.xz",
+      "version": "37.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/platform-tools-37.0.0-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "f0b78fdd95803de0d4e0bd6bf8f69ffc6f2ec1a35e5d86bf162fa3df18e85c2b",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "arm64-v8a",
+      "filename": "platform-tools-37.0.0-aarch64.tar.xz",
+      "version": "37.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/platform-tools-37.0.0-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "a3f3aa355681ac5aa585762f5284b53c6a6247f63be352a451a9e2aaf62f9d98",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "platform-tools-36.0.1-arm.tar.xz",
+      "version": "36.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/platform-tools-36.0.1-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "8d6c121d11d29c306d5c6569066e6e88e0d9f82819904809336bd805d1f0a1f8",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "arm64-v8a",
+      "filename": "platform-tools-36.0.1-aarch64.tar.xz",
+      "version": "36.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/platform-tools-36.0.1-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "e9dab565829d374e0a429438b16bc5d17b9c4bc6654748a2ec2e086af02f7add",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "platform-tools-36.0.0-arm.tar.xz",
+      "version": "36.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/platform-tools-36.0.0-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "6628fcd99d075b80249f5c7caf092c7d2762740f1e47ffd9598197cd883f8b9d",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "arm64-v8a",
+      "filename": "platform-tools-36.0.0-aarch64.tar.xz",
+      "version": "36.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/platform-tools-36.0.0-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "66b3dd134a430e327956bb026a9b51fe625bd911c884e60e20c8d64b69b6f6d5",
+      "build_type": "platform_tools"
     },
     {
       "id": "android-platform-tools",
@@ -105,6 +566,28 @@
       "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
       "encrypted": false,
       "sha256": "81ea25d2c0a549c4270fdde21dba20b209851ad76bab96dd54f2dc4952a832ef",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "platform-tools-35.0.1-arm.tar.xz",
+      "version": "35.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/platform-tools-35.0.1-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "08b92a95217e0c24523565826a0224b66607701ef24a205a5ac68afabfe1c78d",
+      "build_type": "platform_tools"
+    },
+    {
+      "id": "android-platform-tools",
+      "architecture": "arm64-v8a",
+      "filename": "platform-tools-35.0.1-aarch64.tar.xz",
+      "version": "35.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/platform-tools-35.0.1-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "40246d6911a8bb64ee9c5603eaeb064494dddc192ad773fe9816c47c1a10a6dc",
       "build_type": "platform_tools"
     },
     {
@@ -340,6 +823,28 @@
     },
     {
       "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "4.1.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.2/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "7bb673aff7f28c094484b2aded8c8ddd5314fc0f16b0400e741224dfe322484c",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "4.1.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.2/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "58087cdca16fcbaa557c3c8821fe72c69279b62e3006c685f03f53dacdaf5f6d",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
       "architecture": "arm64-v8a",
       "filename": "cmake-aarch64-linux-musl.tar.xz",
       "version": "4.1.2",
@@ -373,6 +878,17 @@
     },
     {
       "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "4.1.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.1/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "6140bb4ff84e1ef7aed3a776fa60dea13eec632b08e50a1207ad0b4e7e4ad04c",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
       "architecture": "arm64-v8a",
       "filename": "android-cmake-build-tools-arm64-bundle-v1",
       "version": "4.1.1",
@@ -385,6 +901,127 @@
     {
       "id": "android-cmake",
       "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "4.1.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.1/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "096c92895098658c9a0d98c69c8a0bfb614db05f262d7487a039ce01d4ce676c",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "4.1.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.0/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "81729227828683e9118df6dea586347777414817d2babbc1af448154b530c4c9",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "4.1.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.1.0/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "da4259edf8505fc3be695960d7e58e3b45b5a3c5a77bc2e405a2287ff9e2ff8d",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "4.0.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.0.3/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "057beed09eb9730ecb1d2163d88d78356c33fdb22b52c869aee2d047a73c6419",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "4.0.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.0.3/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "e29236afed7b6a252b7ea435bae15164cc4af23e70663f51ca336e0969c08b07",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "4.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.0.2/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "67cca4a5ae8a6e5478a0b39338e9396842fb529dcd7b5f87dc69b5fcb78f72b1",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "4.0.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v4.0.2/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "422f3b8d60c82699b400d3094e865bb18ec06671a0ff02f7d08214344e3fdb4d",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.6.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.6.0/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "5d429880c197a7743a5771dd19a43b9e6c05d8ca54407aa5155c089f5604d649",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.6.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.6.0/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "03b9543ad8ae00ba9485fc4b1e16337af4ffcc88d7211848a7e0ebffa989e50e",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.31.6",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.6/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "f19a3d6678870bbd11ba65383fdf455384a7d71325cd6b646a2525b7a1faa3a2",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.31.6",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.6/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "b82127deb31355d551311a38678c58bb16ec7392c6f92815407c0fa96d642e72",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
       "filename": "cmake-v3.31.6-aarch64.tar.xz",
       "version": "3.31.6",
       "bundle_version": "-1",
@@ -392,6 +1029,292 @@
       "encrypted": false,
       "sha256": "92c779b969dda55657d9d922391276611f0e6463f9084e21511f736420270e2d",
       "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.31.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.5/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "2adb4eaf999d5db69b1bc3b771b6b38c60dbd2745c85b19360579e61c740c063",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.31.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.5/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "0122f74102d6a5d26ebaead9fcf7350978cc0cc869d07d268411b7f3b62b2e25",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.31.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.4/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "79aa6de02a12e132a48fd2ec1d0ac23eb80b615f677db7c827edb0e01dbe9a66",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.31.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.4/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "f7da2cac017528854c52bb0ac52808442407a4bb7e1a2d6488ebc2d0c88e3b3d",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.31.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.1/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "5e76c0941655ea5116ab098b92456147cb9c7fb132c4b433d7534fee18be8d58",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.31.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.1/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "c2b880f5e4e664c9b7d519fde3e73f86cf2ab7ff8f4450afefc0da7771a869f0",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.31.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.0/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "cd876bbaf5f3972ece93f487ba81787e2ae49cc8e4be33811c3fedebf6844dbf",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.31.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.31.0/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "83f99e54092ecd3f92eaa20ed19c4ea43028df164ddf08c21e1f0e6431125cc1",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.30.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.5/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "a56cb9144ad29802d63ffff2803f639f2dea41dbff8d04b0e5401f2c0e1a8830",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.30.5",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.5/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "3af01fe3e40874374acbb159f4b08104ebb898ee407d7f5b6b48e6d525a66f73",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.30.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.4/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "12e2ccf7cd6cab2a462c594f0b0b3752e5cc79a0e2d977a8f2009656125871be",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.30.4",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.4/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "9e68366dac6c94f1a29e57eb54d2dce724403f39ed77a5d0527ebceff6513b53",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.30.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.3/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "71c90c82ccc2c91d727bf5f93a7dee83478940c5b2fabbcaa873bf0541722742",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.30.3",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.30.3/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "3dd8b6c665781c36aa4c094345c1d78e284a60df945c8b1551d14b2db0e58266",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.22.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.22.1/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "9d3c2f42215b422bdd86c327d1b17653ce0d856c825c1e4cf288aeb866ecb7fb",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.22.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.22.1/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "e2cc5b878fabac1596b3e9b5a0e968340b9852bcb543819092378fc766d43391",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.18.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.18.1/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "b279cf0cc3ef859158d0f0af233ed3a2ee344a4d7c17ec103c58c63bfcf66c0f",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.18.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.18.1/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "f30a80d3f3cc9ea9bd291c7e0ffa717e448dcf806382e32dd1fb0312d5978b38",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "armeabi-v7a",
+      "filename": "cmake-armv7a-linux-androideabi.tar.xz",
+      "version": "3.10.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.10.2/cmake-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "df1d42a5d89fbfc27495b1f81ad0f77adb87d0ad562a3fbfcd6989790ea04d13",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-cmake",
+      "architecture": "arm64-v8a",
+      "filename": "cmake-aarch64-linux-android.tar.xz",
+      "version": "3.10.2",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v3.10.2/cmake-aarch64-linux-android.tar.xz",
+      "encrypted": false,
+      "sha256": "444c2840b55f39ab5b343ca223e57ef589a4523e56ceacf1d1524d29c24d6274",
+      "build_type": "cmake"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "build-tools-37.0.0-arm.tar.xz",
+      "version": "37.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/build-tools-37.0.0-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "0bfc06cac22086971def38a92d1a5567e9c0a85b9a4f9f90bef80e3e815d7867",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "arm64-v8a",
+      "filename": "build-tools-37.0.0-aarch64.tar.xz",
+      "version": "37.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v37.0.0/build-tools-37.0.0-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "837a15f8ac1f167147a28a5556e594ed2cf105e0abe06a94d393477d7e4f7c7c",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "build-tools-36.0.1-arm.tar.xz",
+      "version": "36.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/build-tools-36.0.1-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "7daa595710e57d7f3976331da994cf3f53b19d433af6bd76d0641d7b94917df7",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "arm64-v8a",
+      "filename": "build-tools-36.0.1-aarch64.tar.xz",
+      "version": "36.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.1/build-tools-36.0.1-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "1e5ed5cc4a0fea0a26e5433224247b51ed574807c681d2e290a25ef60dec0061",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "build-tools-36.0.0-arm.tar.xz",
+      "version": "36.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/build-tools-36.0.0-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "3c7bfdc49ff2da86151adfbac8e6bf819cea1cdb48636e188d1203b68690a129",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "arm64-v8a",
+      "filename": "build-tools-36.0.0-aarch64.tar.xz",
+      "version": "36.0.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v36.0.0/build-tools-36.0.0-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "a9321251368c68541ccc561830b7fe21f72f3861ce3b538f7a45463234326bfd",
+      "build_type": "build_tools"
     },
     {
       "id": "android-build-tools",
@@ -424,6 +1347,28 @@
       "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
       "encrypted": false,
       "sha256": "9b56535c15d8e11f08cffe8074cb7038c19734116fdc7fd8caf3b21cf178d4ca",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "armeabi-v7a",
+      "filename": "build-tools-35.0.1-arm.tar.xz",
+      "version": "35.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/build-tools-35.0.1-arm.tar.xz",
+      "encrypted": false,
+      "sha256": "ffacc8ade1c7485139d84d857c43c07e80fccb8b88c43187ac38b40cfb87db7e",
+      "build_type": "build_tools"
+    },
+    {
+      "id": "android-build-tools",
+      "architecture": "arm64-v8a",
+      "filename": "build-tools-35.0.1-aarch64.tar.xz",
+      "version": "35.0.1",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v35.0.1/build-tools-35.0.1-aarch64.tar.xz",
+      "encrypted": false,
+      "sha256": "7a132ee95de4c61283bbe84c16fb927ca8fd94312516b69b64d8bd53211b0a7d",
       "build_type": "build_tools"
     }
   ]
