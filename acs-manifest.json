@@ -1,9 +1,9 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-11-15T08:50:01Z",
+  "generated_at": "2026-11-16T09:00:20Z",
   "organization": "Roni077",
   "repository": "acs-build-system",
-  "total_builds": 114,
+  "total_builds": 115,
   "ndk_versions": [
     "30.0.16248370",
     "29.0.14206865",
@@ -129,6 +129,17 @@
     }
   },
   "packages": [
+    {
+      "id": "flutter-sdk",
+      "architecture": "arm64-v8a",
+      "filename": "flutter_3.50.0-7_aarch64.deb",
+      "version": "3.50.0",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/flutter-v3.50.0-7/flutter_3.50.0-7_aarch64.deb",
+      "encrypted": false,
+      "sha256": "a6ec9be6572a74f0f6adb3ae0ce1e6e9a2bdca67b6079d4c829aa333843c74b2",
+      "build_type": "flutter_sdk"
+    },
     {
       "id": "flutter-sdk",
       "architecture": "arm64-v8a",
