@@ -1,9 +1,9 @@
 {
   "manifest_version": "2.0.0",
-  "generated_at": "2026-11-27T10:34:33Z",
+  "generated_at": "2026-11-28T09:49:11Z",
   "organization": "Roni077",
   "repository": "acs-build-system",
-  "total_builds": 132,
+  "total_builds": 133,
   "ndk_versions": [
     "30.0.16248370",
     "29.0.14206865",
@@ -1005,6 +1005,17 @@
       "url": "https://github.com/Roni077/acs-build-system/releases/download/v21.0.6113669/android-ndk-r21-aarch64-linux-android.tar.xz",
       "encrypted": false,
       "sha256": "084dcf99136cf2381b155975782e74c4e3e9a9adfbe38b26459036aa32c06f25",
+      "build_type": "ndk"
+    },
+    {
+      "id": "android-native-kit",
+      "architecture": "armeabi-v7a",
+      "filename": "android-ndk-r20-armv7a-linux-androideabi.tar.xz",
+      "version": "20.0.5594570",
+      "bundle_version": "-1",
+      "url": "https://github.com/Roni077/acs-build-system/releases/download/v20.0.5594570/android-ndk-r20-armv7a-linux-androideabi.tar.xz",
+      "encrypted": false,
+      "sha256": "5520c836312a822c724e2b35c0ac03db00077a8299c6a2203dfbb5d07bcb8f0e",
       "build_type": "ndk"
     },
     {
